@@ -1,0 +1,3 @@
+A simple way to sign code so that it is not copied or pirated.
+Obviously there are some security issues with the signing,
+you are expected to use your own hash in your application, MDx and SHA1 are supported
