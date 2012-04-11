@@ -6,13 +6,13 @@
 #include <fstream>
 #include <string.h>
 #include <sstream>
+#define num_runs 3
 using namespace std;
-
+void encrypt_order(char[]);
 int main(int argc,char**argv)
 {
-    if (argc < 2)
+    if (argc < 3)
         exit(EXIT_FAILURE);
-    cout << argv[1] << endl;
     ifstream file;
     ofstream ifile;
     char ibuf[500000];
@@ -21,6 +21,7 @@ int main(int argc,char**argv)
     char program[20];
     unsigned char obuf[5000];
     unsigned char * cchash;
+    char order[] = {argv[2][0],argv[2][1],argv[2][2]};
     strcpy(program,argv[1]);
     strcpy(ofile,program);
     strcat(ofile,".sig");
@@ -32,8 +33,23 @@ int main(int argc,char**argv)
         strcat(ibuf,tmp);
     }
     cchash = CC_MD4(ibuf,strlen(ibuf),obuf);
+    for (int i = 0; i < 4; i++)
+    {
+        if (order[i] == '1')
+            cchash = /*your function*/(cchash, strlen((char*)cchash), obuf);
+        if (order[i] == '2')
+            cchash = /*your function*/(cchash,strlen((char*)cchash),obuf);
+        if (order[i] == '3')
+            cchash = /*your function*/(cchash,strlen((char*)cchash),obuf);
+    }
+    encrypt_order(order);
     ifile.open(ofile,ios::binary);
+    ifile << order << endl;
     ifile << cchash;
     ifile.close();
     return 0;
+}
+void encrypt_order(char order[])
+{
+    //your decryption goes here
 }
