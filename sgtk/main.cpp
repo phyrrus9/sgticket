@@ -1,3 +1,12 @@
+/* SGTK (sgrun) version 1 by Ethan Laur (phyrrus9) <phyrrus9@gmail.com>
+ * This program will run a signed binary files, passing any parameters
+ * given from the command line to the program.  The binary file this 
+ * program launches is NOT secure unless it makes sure that argv[0]
+ * is "/bin/sgrun" and nothing else! It is signed using sgsign which
+ * will be compiled for mac os X ONLY!  It uses encryption.cpp (blank)
+ * for the decryption function and hash generator. If the signature has
+ * been invalidated or incorrect, the program will send the error code 2
+ * meaning BAD SIGNATURE */
 #include <stdio.h>
 #include <string.h>
 #include <CommonCrypto/CommonDigest.h>
@@ -6,9 +15,8 @@
 #include <fstream>
 #include <string.h>
 #include <sstream>
-#define num_runs 3
+#include "../encryption.cpp"
 using namespace std;
-void decrypt_order(char[]);
 int main(int argc,char**argv)
 {
     if (argc < 2)
@@ -31,6 +39,16 @@ int main(int argc,char**argv)
         ifile >> u_cchash;
         ifile.close();
         file.open(program,ios::binary);
+    if (!file.good())
+    {
+        cout << "ERR 4: FILE NOT GOOD" << endl;
+        return 4;
+    }
+    if (!file)
+    {
+        cout << "ERR 3: COULD NOT OPEN PROGRAM OR FILE" << endl;
+        return 3;
+    }
         while (!file.eof())
         {
             file >> tmp;
@@ -38,15 +56,7 @@ int main(int argc,char**argv)
         }
         cchash = CC_MD4(ibuf,strlen(ibuf),obuf);
     decrypt_order(order);
-    for (int i = 0; i < 4; i++)
-    {
-        if (order[i] == '1')
-            cchash = /*your function*/(cchash, strlen((char*)cchash), obuf);
-        if (order[i] == '2')
-            cchash = /*your function*/(cchash,strlen((char*)cchash),obuf);
-        if (order[i] == '3')
-            cchash = /*your function*/(cchash,strlen((char*)cchash),obuf);
-    }
+	secure_key(order,cchash,obuf); //complete the security
         file.close();
         ostringstream s1cchash,s2cchash;
         s1cchash << cchash;
@@ -54,7 +64,13 @@ int main(int argc,char**argv)
         if (s1cchash.str() == s2cchash.str())
         {
             cout << "SIG: OK" << endl;
-            system(program);
+            string command;
+            for (int i = 1; i < argc; i++)
+            {
+                command += argv[i];
+                command += " ";
+            }
+            system(command.c_str());
         }
         else
         {
@@ -62,8 +78,4 @@ int main(int argc,char**argv)
             return 2;
         }
     return 0;
-}
-void decrypt_order(char order[])
-{
-    //your decryption code here
 }
