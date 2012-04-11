@@ -31,10 +31,12 @@ int main(int argc,char**argv)
     char program[20];
     unsigned char obuf[5000];
     unsigned char * cchash;
-    char order[] = {argv[2][0],argv[2][1],argv[2][2]};
+    char order[num_runs];
     strcpy(program,argv[1]);
     strcpy(ofile,program);
     strcat(ofile,".sig");
+    for (int j=0;j<num_runs;j++)
+       order[i] = argv[2][i];
     ifile.close();
     file.open(program,ios::binary);
     if (!file)
