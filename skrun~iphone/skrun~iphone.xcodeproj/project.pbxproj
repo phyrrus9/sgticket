@@ -1,0 +1,206 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AD79FD9158CD94D00CE2BCA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AD79FD8158CD94D00CE2BCA /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AD79FBB158CD91500CE2BCA /* skrun~iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skrun~iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD79FD6158CD93D00CE2BCA /* encryption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = encryption.cpp; path = ../src/encryption.cpp; sourceTree = "<group>"; };
+		4AD79FD8158CD94D00CE2BCA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/sgtk/main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AD79FB8158CD91500CE2BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AD79FB0158CD91500CE2BCA = {
+			isa = PBXGroup;
+			children = (
+				4AD79FD8158CD94D00CE2BCA /* main.cpp */,
+				4AD79FD6158CD93D00CE2BCA /* encryption.cpp */,
+				4AD79FBC158CD91500CE2BCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AD79FBC158CD91500CE2BCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AD79FBB158CD91500CE2BCA /* skrun~iphone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AD79FBA158CD91500CE2BCA /* skrun~iphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD79FD3158CD91500CE2BCA /* Build configuration list for PBXNativeTarget "skrun~iphone" */;
+			buildPhases = (
+				4AD79FB7158CD91500CE2BCA /* Sources */,
+				4AD79FB8158CD91500CE2BCA /* Frameworks */,
+				4AD79FB9158CD91500CE2BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "skrun~iphone";
+			productName = "skrun~iphone";
+			productReference = 4AD79FBB158CD91500CE2BCA /* skrun~iphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AD79FB2158CD91500CE2BCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4AD79FB5158CD91500CE2BCA /* Build configuration list for PBXProject "skrun~iphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4AD79FB0158CD91500CE2BCA;
+			productRefGroup = 4AD79FBC158CD91500CE2BCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AD79FBA158CD91500CE2BCA /* skrun~iphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AD79FB9158CD91500CE2BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AD79FB7158CD91500CE2BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD79FD9158CD94D00CE2BCA /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4AD79FD1158CD91500CE2BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AD79FD2158CD91500CE2BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AD79FD4158CD91500CE2BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skrun~iphone/skrun~iphone-Prefix.pch";
+				INFOPLIST_FILE = "skrun~iphone/skrun~iphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4AD79FD5158CD91500CE2BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skrun~iphone/skrun~iphone-Prefix.pch";
+				INFOPLIST_FILE = "skrun~iphone/skrun~iphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AD79FB5158CD91500CE2BCA /* Build configuration list for PBXProject "skrun~iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD79FD1158CD91500CE2BCA /* Debug */,
+				4AD79FD2158CD91500CE2BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD79FD3158CD91500CE2BCA /* Build configuration list for PBXNativeTarget "skrun~iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD79FD4158CD91500CE2BCA /* Debug */,
+				4AD79FD5158CD91500CE2BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AD79FB2158CD91500CE2BCA /* Project object */;
+}

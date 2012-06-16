@@ -11,7 +11,6 @@
  * file instead of signing it. */
 #include <stdio.h>
 #include <string.h>
-#include <CommonCrypto/CommonDigest.h>
 #include <iostream>
 #include <cstring>
 #include <fstream>
@@ -19,10 +18,14 @@
 #include <sstream>
 #include "../encryption.cpp"
 using namespace std;
+extern void secure_key(char *,unsigned char *, unsigned char *);
 int main(int argc,char**argv)
 {
     if (argc < 3)
+    {
+        cout << "Err invalid args" << endl;
         exit(EXIT_FAILURE);
+    }
     ifstream file;
     ofstream ifile;
     char ibuf[500000];
@@ -36,7 +39,7 @@ int main(int argc,char**argv)
     strcpy(ofile,program);
     strcat(ofile,".sig");
     for (int j=0;j<num_runs;j++)
-       order[i] = argv[2][i];
+       order[j] = argv[2][j];
     ifile.close();
     file.open(program,ios::binary);
     if (!file)
@@ -50,7 +53,7 @@ int main(int argc,char**argv)
         strcat(ibuf,tmp);
     }
     cchash = CC_MD4(ibuf,strlen(ibuf),obuf);
-   secure_key(order,cchash,obuf);
+    secure_key(order,cchash,obuf);
     encrypt_order(order);
     ifile.open(ofile,ios::binary);
     if (!ifile)

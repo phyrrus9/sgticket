@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A899395158CD6C20028F319 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A899394158CD6C20028F319 /* main.cpp */; };
+		4A899397158CD6CD0028F319 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A899396158CD6CD0028F319 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A89936C158CD37F0028F319 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4A899381158CD63E0028F319 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A89936E158CD37F0028F319 /* sgsign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sgsign; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A899383158CD63E0028F319 /* sgtk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sgtk; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A899392158CD6B70028F319 /* encryption.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = encryption.cpp; path = src/encryption.cpp; sourceTree = SOURCE_ROOT; };
+		4A899394158CD6C20028F319 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/sgsign/main.cpp; sourceTree = SOURCE_ROOT; };
+		4A899396158CD6CD0028F319 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/sgtk/main.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A89936B158CD37F0028F319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A899380158CD63E0028F319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A899363158CD37E0028F319 = {
+			isa = PBXGroup;
+			children = (
+				4A899392158CD6B70028F319 /* encryption.cpp */,
+				4A899371158CD37F0028F319 /* sgsign */,
+				4A899385158CD63F0028F319 /* sgtk */,
+				4A89936F158CD37F0028F319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A89936F158CD37F0028F319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A89936E158CD37F0028F319 /* sgsign */,
+				4A899383158CD63E0028F319 /* sgtk */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A899371158CD37F0028F319 /* sgsign */ = {
+			isa = PBXGroup;
+			children = (
+				4A899394158CD6C20028F319 /* main.cpp */,
+			);
+			path = sgsign;
+			sourceTree = "<group>";
+		};
+		4A899385158CD63F0028F319 /* sgtk */ = {
+			isa = PBXGroup;
+			children = (
+				4A899396158CD6CD0028F319 /* main.cpp */,
+			);
+			path = sgtk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		4A89939C158CD71E0028F319 /* skticket */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 4A89939D158CD71E0028F319 /* Build configuration list for PBXLegacyTarget "skticket" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = skticket;
+			passBuildSettingsInEnvironment = 1;
+			productName = skticket;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		4A89936D158CD37F0028F319 /* sgsign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A899378158CD37F0028F319 /* Build configuration list for PBXNativeTarget "sgsign" */;
+			buildPhases = (
+				4A89936A158CD37F0028F319 /* Sources */,
+				4A89936B158CD37F0028F319 /* Frameworks */,
+				4A89936C158CD37F0028F319 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sgsign;
+			productName = sgsign;
+			productReference = 4A89936E158CD37F0028F319 /* sgsign */;
+			productType = "com.apple.product-type.tool";
+		};
+		4A899382158CD63E0028F319 /* sgtk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A89938A158CD63F0028F319 /* Build configuration list for PBXNativeTarget "sgtk" */;
+			buildPhases = (
+				4A89937F158CD63E0028F319 /* Sources */,
+				4A899380158CD63E0028F319 /* Frameworks */,
+				4A899381158CD63E0028F319 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sgtk;
+			productName = sgtk;
+			productReference = 4A899383158CD63E0028F319 /* sgtk */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A899365158CD37E0028F319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4A899368158CD37E0028F319 /* Build configuration list for PBXProject "sgsign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A899363158CD37E0028F319;
+			productRefGroup = 4A89936F158CD37F0028F319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A89936D158CD37F0028F319 /* sgsign */,
+				4A899382158CD63E0028F319 /* sgtk */,
+				4A89939C158CD71E0028F319 /* skticket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A89936A158CD37F0028F319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A899395158CD6C20028F319 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A89937F158CD63E0028F319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A899397158CD6CD0028F319 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A899376158CD37F0028F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A899377158CD37F0028F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A899379158CD37F0028F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A89937A158CD37F0028F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A89938B158CD63F0028F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A89938C158CD63F0028F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A89939E158CD71E0028F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A89939F158CD71E0028F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A899368158CD37E0028F319 /* Build configuration list for PBXProject "sgsign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A899376158CD37F0028F319 /* Debug */,
+				4A899377158CD37F0028F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A899378158CD37F0028F319 /* Build configuration list for PBXNativeTarget "sgsign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A899379158CD37F0028F319 /* Debug */,
+				4A89937A158CD37F0028F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A89938A158CD63F0028F319 /* Build configuration list for PBXNativeTarget "sgtk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A89938B158CD63F0028F319 /* Debug */,
+				4A89938C158CD63F0028F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A89939D158CD71E0028F319 /* Build configuration list for PBXLegacyTarget "skticket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A89939E158CD71E0028F319 /* Debug */,
+				4A89939F158CD71E0028F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A899365158CD37E0028F319 /* Project object */;
+}

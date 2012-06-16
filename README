@@ -2,3 +2,6 @@ A simple way to sign code so that it is not copied or pirated.
 The signature signing functions have been stripped to protect them from pirates.
 You are expected to use your own hashes where necessary.
 Binaries with full code are compiled under /binary
+
+
+You can run (OSX) make in the directory and it will build everything (mac os x sign and run and iphone run)

@@ -1,0 +1,71 @@
+Tsgsign
+v5
+r1
+cCheck dependencies
+cCompileC build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.o /Users/phyrrus9/sgticket/src/sgsign/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/phyrrus9/sgticket/build/Release/sgsign normal x86_64
+cGenerateDSYMFile /Users/phyrrus9/sgticket/build/Release/sgsign.dSYM /Users/phyrrus9/sgticket/build/Release/sgsign
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c000000004F29C61A00000000000000EE
+t1328137754
+s238
+
+N/Users/phyrrus9/sgticket/build/Release/sgsign
+t2
+s0
+
+N/Users/phyrrus9/sgticket/build/Release/sgsign.dSYM
+t2
+s0
+
+N/Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/sgsign.LinkFileList
+c000000004FDCA336000000000000005E
+t1339859766
+s94
+
+N/Users/phyrrus9/sgticket/src/sgsign/main.cpp
+c000000004FDC9E7200000000000007BF
+t1339858546
+s1983
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd10343b6da8cb541^427c58b6da8cb541^---0#1#0#--18"Check dependencies36"725F9707-2E4B-4C85-9D22-BC18F164DA5E-
+
+CCompileC build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.o /Users/phyrrus9/sgticket/src/sgsign/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s361552566.350769
+e361552566.591500
+r1
+xCompileC
+xbuild/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.o
+x/Users/phyrrus9/sgticket/src/sgsign/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/phyrrus9/sgticket/src/sgsign/main.cpp1b135ab6da8cb541^d36b97b6da8cb541^---0#0#0#-19%DVTDocumentLocation2@60"file://localhost/Users/phyrrus9/sgticket/src/sgsign/main.cpp0000000000000000^2156"CompileC build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.o src/sgsign/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phyrrus9/sgticket    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/sgsign-generated-files.hmap -I/Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/sgsign-own-target-headers.hmap -I/Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/sgsign-all-target-headers.hmap -iquote /Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/sgsign-project-headers.hmap -I/Users/phyrrus9/sgticket/build/Release/include -I/Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/DerivedSources/x86_64 -I/Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/DerivedSources -F/Users/phyrrus9/sgticket/build/Release -MMD -MT dependencies -MF /Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.dia -c /Users/phyrrus9/sgticket/src/sgsign/main.cpp -o /Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/main.o36"C0F4264E-B09C-4FD8-92C5-D90F43F02751-
+
+CGenerateDSYMFile /Users/phyrrus9/sgticket/build/Release/sgsign.dSYM /Users/phyrrus9/sgticket/build/Release/sgsign
+s361552566.629812
+e361552566.641098
+r1
+xGenerateDSYMFile
+x/Users/phyrrus9/sgticket/build/Release/sgsign.dSYM
+x/Users/phyrrus9/sgticket/build/Release/sgsign
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Generating /Users/phyrrus9/sgticket/build/Release/sgsign.dSYM164ba1b6da8cb541^2e20a4b6da8cb541^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/phyrrus9/sgticket/build/Release/sgsign.dSYM000000000080d041^260"GenerateDSYMFile build/Release/sgsign.dSYM build/Release/sgsign    cd /Users/phyrrus9/sgticket    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil /Users/phyrrus9/sgticket/build/Release/sgsign -o /Users/phyrrus9/sgticket/build/Release/sgsign.dSYM36"A2974D6B-DC1C-4CAA-B3D9-2BA4FD6BC7C5-
+
+CLd /Users/phyrrus9/sgticket/build/Release/sgsign normal x86_64
+s361552566.598592
+e361552566.622302
+r1
+xLd
+x/Users/phyrrus9/sgticket/build/Release/sgsign
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Link /Users/phyrrus9/sgticket/build/Release/sgsignde5a9ab6da8cb541^3c509fb6da8cb541^---0#0#0#--606"Ld build/Release/sgsign normal x86_64    cd /Users/phyrrus9/sgticket    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/phyrrus9/sgticket/build/Release -F/Users/phyrrus9/sgticket/build/Release -filelist /Users/phyrrus9/sgticket/build/sgsign.build/Release/sgsign.build/Objects-normal/x86_64/sgsign.LinkFileList -mmacosx-version-min=10.7 -o /Users/phyrrus9/sgticket/build/Release/sgsign36"89B14B70-2F48-4F80-9A50-24E02421BE93-
+
