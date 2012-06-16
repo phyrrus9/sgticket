@@ -1,11 +1,13 @@
 all:
-	xcodebuild -target sgsign
-	xcodebuild -target sgtk
-	mv ./build/Release/sgsign ./binary
-	mv ./build/Release/sgtk ./binary/sgrun
-	rm -rf ./build
-	cd skrun~iphone
-	xcodebuild
-	mv skrun~iphone/build/Release-iphoneos/skrun~iphone.app/skrun~iphone ./binary/sgrun~iphone
-	rm -rf ./skrun~iphone/build
-
+	./compile
+deb: all
+	rm -rf ./deb/bin
+	mkdir ./deb/bin
+	cp -R ./binary/ ./deb/bin/
+	rm ./deb/bin/README
+	nano ./deb/DEBIAN/control
+	dpkg -b deb
+	mv deb.deb sgticket.deb
+clean:
+	rm -rf build
+	rm -rf *.deb

@@ -1,0 +1,8 @@
+Package: com.modtech.sgticket
+Name: Sargent Signature
+Version: 1.0
+Architecture: all
+Description: Sign your code
+Maintainer: Ethan Laur <phyrrus9@gmail.com>
+Author: Ethan Laur (phyrrus9) <phyrrus9@gmail.com>
+Section: Utilities

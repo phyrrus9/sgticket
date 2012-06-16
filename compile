@@ -1,0 +1,26 @@
+#! /bin/bash
+echo "cleaning build area"
+rm -rf ./binary
+mkdir binary
+cp ./readme_binary ./binary/README
+echo "building images"
+sleep 3
+xcodebuild -target sgsign
+xcodebuild -target sgtk
+mv ./build/Release/sgsign ./binary
+mv ./build/Release/sgtk ./binary/sgrun
+rm -rf ./build
+cd skrun~iphone
+xcodebuild
+pwd
+cd ../
+mv ./skrun~iphone/build/Release-iphoneos/skrun~iphone.app/skrun~iphone ./binary/sgrun~iphone
+rm -rf ./skrun~iphone/build
+cd binary
+echo "Signing files"
+sleep 2
+./sgsign sgrun 1234567
+./sgsign sgrun~iphone 1234567
+./sgsign sgsign 1234567
+cd ../
+echo "done"
